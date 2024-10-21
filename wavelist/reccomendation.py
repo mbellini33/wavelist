@@ -31,6 +31,6 @@ if st.button("Get Recommendations"):
         
     st.write("Recommended destinations based on your preferences:")
     #st.write(recommendations)
-    st.write('Hello')
+    st.write('Siuuu')
 else:
         st.write("No destinations found within your budget.")
