@@ -1,4 +1,6 @@
-streamlit
+fastapi 
+uvicorn
 numpy
 polars
-openai ==0.28
+openai == 0.28
+python-multipart
