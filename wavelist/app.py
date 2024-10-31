@@ -53,7 +53,8 @@ async def show_recommendations(
     else : 
         total_revenue = 10000
     
-
+def print():
+    return "hello"
 
     # Crea le preferenze di viaggio
     preferences = {
