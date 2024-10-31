@@ -1,3 +1,0 @@
-google-generative-ai
-openai
-fastapi
