@@ -6,6 +6,9 @@ import google.generativeai as genai
 
 def print():
     return "hello"
+def print():
+    return "hello"
+
 genai.configure(api_key=GEMINI_API_KEY)
 
 def get_travel_recommendations(preferences,total_revenue):

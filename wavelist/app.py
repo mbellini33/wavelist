@@ -8,6 +8,8 @@ import logging
 app = FastAPI()
 
 print('hello')
+
+print('hello')
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
