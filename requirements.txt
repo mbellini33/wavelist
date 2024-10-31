@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 google-generative-ai
 openai
 fastapi
+=======
+google-generative-ai
+openai
+fastapi
+>>>>>>> 77518ce059ae0852df8894df1d821b736f02b8dd
