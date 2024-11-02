@@ -1,0 +1,5 @@
+google-generativeai
+openai==0.28
+fastapi
+uvicorn
+python-multipart

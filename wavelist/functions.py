@@ -3,13 +3,9 @@ import openai
 import requests
 import google.generativeai as genai
 
-
-def print():
-    return "hello"
-def print():
-    return "hello"
-
 genai.configure(api_key=GEMINI_API_KEY)
+
+
 
 def get_travel_recommendations(preferences,total_revenue):
     prompt_general = (
@@ -30,6 +26,7 @@ def get_travel_recommendations(preferences,total_revenue):
 
     stops_gpt_35 = response_gpt_35.choices[0].message['content']
 
+  
     ###GEMINI
     model = genai.GenerativeModel("gemini-1.5-flash-8b")
     prompt_gemini_foods = (
@@ -60,6 +57,7 @@ def get_travel_recommendations(preferences,total_revenue):
     f"**Cultural Experiences (Geminil):**\n{cultural_gemini}\n"
     )
 
+    print(combined_recommendations)
 
 
     return combined_recommendations

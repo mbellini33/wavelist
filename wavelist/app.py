@@ -7,9 +7,6 @@ import logging
 
 app = FastAPI()
 
-print('hello')
-
-print('hello')
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
@@ -54,9 +51,6 @@ async def show_recommendations(
 
     else : 
         total_revenue = 10000
-    
-def print():
-    return "hello"
 
     # Crea le preferenze di viaggio
     preferences = {
@@ -68,9 +62,10 @@ def print():
     # Chiama la funzione di raccomandazione importata da functions.py
     recommendations = get_travel_recommendations(preferences,total_revenue)
     
-    if isinstance(recommendations, dict):
-        return JSONResponse(content=recommendations)
-    else:
-        return HTMLResponse(content=f"<html><body><h1>Travel Recommendations</h1><p>{recommendations}</p></body></html>")
+    return HTMLResponse(content=f"<html><body><h1>Travel Recommendations</h1><p>{recommendations}</p></body></html>")
+    #if isinstance(recommendations, dict):
+    #    return JSONResponse(content=recommendations)
+    #else:
+    #    return HTMLResponse(content=f"<html><body><h1>Travel Recommendations</h1><p>{recommendations}</p></body></html>")
 
     
