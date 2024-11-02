@@ -3,6 +3,8 @@ import openai
 import requests
 import google.generativeai as genai
 
+
+
 genai.configure(api_key=GEMINI_API_KEY)
 
 
@@ -57,7 +59,6 @@ def get_travel_recommendations(preferences,total_revenue):
     f"**Cultural Experiences (Geminil):**\n{cultural_gemini}\n"
     )
 
-    print(combined_recommendations)
-
+  
 
     return combined_recommendations
